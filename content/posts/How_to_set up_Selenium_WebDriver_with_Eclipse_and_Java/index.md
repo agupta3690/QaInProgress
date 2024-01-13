@@ -2,9 +2,14 @@
 title = 'How to set up Selenium WebDriver with Eclipse and Java?'
 date = 2024-01-12T15:55:02+05:30
 draft = false
+author = 'Arun'
+featuredImage = "/images/featured.jpeg"
+featuredImagePreview = "/images/featured_preview.jpeg"
+
 +++
 
 This is the very first step towards writing a great automation framework using Selenium WebDriver. As already stated, we'll only cover the Selenium WebDriver tutorials with Java and Eclipse. Here's the step by step guide to set up Selenium WebDriver with Eclipse and Java:
+
 
 Installing Java on a Windows machine
 

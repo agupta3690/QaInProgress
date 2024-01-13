@@ -16,7 +16,7 @@ theme = "FeelIt"
   # site keywords
   keywords = ["Theme", "Hugo"]
   # site default theme ("light", "dark", "auto")
-  defaultTheme = "auto"
+  defaultTheme = "light"
   #date format
   dateFormat = "2006-01-02"
 
@@ -25,7 +25,65 @@ theme = "FeelIt"
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = "images/logo.png"
+       avatarURL = "/images/avatar.png"
+
+   # Header config
+  [params.header]
+    # desktop header mode ("fixed", "normal", "auto")
+    desktopMode = "fixed"
+    # mobile header mode ("fixed", "normal", "auto")
+    mobileMode = "auto"
+    # FeelIt NEW | 0.2.0
+
+ #Header title config
+    [params.header.title]
+      # URL of the LOGO
+      logo = ""
+      # title name
+      name = "QA In Progress"
+      # you can add extra information before the name (HTML format is supported), such as icons
+      pre = ""
+      # you can add extra information after the name (HTML format is supported), such as icons
+      post = ""
+      # FeelIt NEW | 0.2.5
+ #whether to use typeit animation for title name
+      typeit = false
+      # FeelIt NEW | 1.0.0
+ #whether to show RSS icon
+      rss = true
+
+    [params.page.share]
+      enable = true
+      Twitter = true
+      Facebook = true
+      Linkedin = true
+      Whatsapp = true
+      Pinterest = true
+      Tumblr = true
+      HackerNews = false
+      Reddit = false
+      VK = false
+      Buffer = false
+      Xing = false
+      Line = false
+      Instapaper = false
+      Pocket = false
+      Digg = false
+      Stumbleupon = false
+      Flipboard = false
+      Weibo = false
+      Renren = false
+      Myspace = false
+      Blogger = false
+      Baidu = false
+      Odnoklassniki = false
+      Evernote = false
+      Skype = false
+      Trello = false
+      Mix = false
+
+    [params.page.comment]
+      enable = true
    
 
 [menu]
@@ -56,6 +114,14 @@ theme = "FeelIt"
     url = "/categories/"
     title = ""
     weight = 3
+
+  [params.page.toc]
+      # whether to enable the table of the contents
+      enable = false
+# whether to keep the static table of the contents in front of the post
+      keepStatic = false
+      # whether to make the table of the contents in the sidebar automatically collapsed
+      auto = false
 
 # Markup related configuration in Hugo
 [markup]
