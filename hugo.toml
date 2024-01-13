@@ -26,7 +26,7 @@ canonifyURLs = true
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-       avatarURL = "/images/avatar.png"
+       avatarURL = "/static/images/avatar.png"
 
       title = ""
       # subtitle shown in home page
