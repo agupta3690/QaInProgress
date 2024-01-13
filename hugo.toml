@@ -7,6 +7,7 @@ title = "QA In Progress"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "FeelIt"
+canonifyURLs = true
 
 [params]
   # FeelIt theme version
@@ -27,6 +28,23 @@ theme = "FeelIt"
       # URL of avatar shown in home page
        avatarURL = "/images/avatar.png"
 
+      title = ""
+      # subtitle shown in home page
+      subtitle = "Learn | Code | Test"
+      # whether to use typeit animation for subtitle
+      typeit = true
+      # whether to show social links
+      social = true
+
+  [params.social]
+    GitHub = "agupta3690"
+    Linkedin = "agupta3690"
+    Twitter = "gupta_arun"
+    Youtubechannel = "UCSGF9T6fpXQsvPeaJ2QiD-Q"
+    Quora = ""
+    Email = "arun.gupta36@yahoo.com"
+    Resume = ""
+
    # Header config
   [params.header]
     # desktop header mode ("fixed", "normal", "auto")
@@ -40,14 +58,14 @@ theme = "FeelIt"
       # URL of the LOGO
       logo = ""
       # title name
-      name = "QA In Progress"
+      name = "QA In Progress..."
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
       post = ""
       # FeelIt NEW | 0.2.5
  #whether to use typeit animation for title name
-      typeit = false
+      typeit = true
       # FeelIt NEW | 1.0.0
  #whether to show RSS icon
       rss = true
