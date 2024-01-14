@@ -3,8 +3,7 @@ title = 'How to set up Selenium WebDriver with Eclipse and Java?'
 date = 2024-01-12T15:55:02+05:30
 draft = false
 author = 'Arun'
-featuredImage = "/images/featured.jpeg"
-featuredImagePreview = "/images/featured_preview.jpeg"
+featuredImage = "/images/posts/How to set up Selenium WebDriver with Eclipse and Java/featured.jpeg"
 
 +++
 

@@ -17,16 +17,30 @@ canonifyURLs = true
   # site keywords
   keywords = ["Theme", "Hugo"]
   # site default theme ("light", "dark", "auto")
-  defaultTheme = "light"
+  defaultTheme = "auto"
   #date format
   dateFormat = "2006-01-02"
+
+  [params.app]
+    # optional site title override for the app when added to an iOS home screen or Android launcher
+    title = "QA In Progress"
+    # whether to omit favicon resource links
+    noFavicon = false
+    # modern SVG favicon to use in place of older style .png and .ico files
+    svgFavicon = ""
+    # Android browser theme color
+    themeColor = "#ffffff"
+    # Safari mask icon color
+    iconColor = "#5bbad5"
+    # Windows v8-10 tile color
+    tileColor = "#da532c"
 
 [params.home.profile]
       enable = true
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-       avatarURL = "/images/avatar.png"
+       avatarURL = "/images/site default/avatar.png"
 
       title = ""
       # subtitle shown in home page
@@ -35,6 +49,51 @@ canonifyURLs = true
       typeit = true
       # whether to show social links
       social = true
+
+    [params.about]
+    # whether to enable profile on about page
+    # depends on .Site.Params.home.profile.enable
+    enable = true
+    # whether to enable param layout
+    param = true
+    # title for param layout
+    paramTitle = "Personal Information"
+    # general description of your site
+    # can be write with markdown style
+    description = "[FeelIt](https://github.com/khusika/FeelIt) is a **clean**, **elegant** but **advanced** blog theme for [Hugo](https://gohugo.io/) developed by [Khusika](https://khusika.dev). It is based on the original [LoveIt Theme](https://github.com/dillonzq/LoveIt), [LeaveIt Theme](https://github.com/liuzc/LeaveIt), and [KeepIt Theme](https://github.com/Fastbyte01/KeepIt)."
+    # description of your status
+    [[params.about.status]]
+      faIcon = "fa-solid fa-building"
+      title = "Company"
+      desc = "FeelIt"
+    [[params.about.status]]
+      faIcon = "fa-solid fa-briefcase fa-fw"
+      title = "Occupation"
+      desc = "Freelancer"
+    [[params.about.status]]
+      title = "Location"
+      faIcon = "fa-solid fa-map-marker-alt"
+      desc = "Earth"
+    # description of your parameter
+    [[params.about.parameter]]
+      language = "UI/UX"
+      level = "80"
+    [[params.about.parameter]]
+      language = "HTML"
+      level = "70"
+    [[params.about.parameter]]
+      language = "Go"
+      level = "60"
+
+
+  [params.home.posts]
+      enable = true
+      # special amount of posts in each home posts page
+      paginate = 6
+    #display image-preview
+      imagePreview = true
+    # default behavior when you don't set "hiddenFromHomePage" in front matter
+      defaultHiddenFromHomePage = false
 
   [params.social]
     GitHub = "agupta3690"
@@ -58,14 +117,14 @@ canonifyURLs = true
       # URL of the LOGO
       logo = ""
       # title name
-      name = "QA In Progress..."
+      name = "QA In Progress"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
-      post = ""
+      post = "&#10003;"
       # FeelIt NEW | 0.2.5
  #whether to use typeit animation for title name
-      typeit = true
+      typeit = false
       # FeelIt NEW | 1.0.0
  #whether to show RSS icon
       rss = true
