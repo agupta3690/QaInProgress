@@ -24,6 +24,11 @@ It will get memory only once in the class area at the time of class loading.
 The single copy of this variable will be shared among all the instances of the class.
 Example of the static variable
 
+{{< admonition example "Example" false >}}
+{{< /admonition >}}
+
+{{< gist agupta3690 12d9eda50364172b4a84a41d9d3f3e6a >}}
+
 
 Output: 
 10
