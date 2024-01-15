@@ -3,7 +3,7 @@ baseURL = "http://example.org/"
 defaultContentLanguage = "en"
 # language code
 languageCode = "en"
-title = "QA In Progress"
+title = "Arun Gupta"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "FeelIt"
@@ -13,9 +13,9 @@ canonifyURLs = true
   # FeelIt theme version
   version = "1.0.X"
   # site description
-  description = "This is My New Hugo Site"
+  description = "Resources for aspiring QA Engineers"
   # site keywords
-  keywords = ["Theme", "Hugo"]
+  keywords = ["QA", "Software", "Testing", "Development", "Quality Assurance", "Quality Engineering"]
   # site default theme ("light", "dark", "auto")
   defaultTheme = "auto"
   #date format
@@ -40,9 +40,9 @@ canonifyURLs = true
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-       avatarURL = "/images/site default/avatar.png"
-
+       avatarURL = "/images/site default/avatar.svg"
       title = ""
+
       # subtitle shown in home page
       subtitle = "Learn | Code | Test"
       # whether to use typeit animation for subtitle
@@ -57,32 +57,32 @@ canonifyURLs = true
     # whether to enable param layout
     param = true
     # title for param layout
-    paramTitle = "Personal Information"
+    paramTitle = "Technical Skills"
     # general description of your site
     # can be write with markdown style
-    description = "[FeelIt](https://github.com/khusika/FeelIt) is a **clean**, **elegant** but **advanced** blog theme for [Hugo](https://gohugo.io/) developed by [Khusika](https://khusika.dev). It is based on the original [LoveIt Theme](https://github.com/dillonzq/LoveIt), [LeaveIt Theme](https://github.com/liuzc/LeaveIt), and [KeepIt Theme](https://github.com/Fastbyte01/KeepIt)."
+    description = "A seasoned SDET with over a decade of experience working with Selenium WebDriver, TestNG, JUnit, Cucumber, Rest Assured and other Java based libraries. Also, an avid stock market observer and learner. Loves sharing knowledge by writing technical blogs. Currently automating a complex logistics platform and reading Super Trader by Van Tharp."
     # description of your status
     [[params.about.status]]
       faIcon = "fa-solid fa-building"
       title = "Company"
-      desc = "FeelIt"
+      desc = "Sprinklr"
     [[params.about.status]]
       faIcon = "fa-solid fa-briefcase fa-fw"
-      title = "Occupation"
-      desc = "Freelancer"
+      title = "Position"
+      desc = "Lead Automation Engineer"
     [[params.about.status]]
       title = "Location"
       faIcon = "fa-solid fa-map-marker-alt"
-      desc = "Earth"
+      desc = "India"
     # description of your parameter
     [[params.about.parameter]]
-      language = "UI/UX"
-      level = "80"
-    [[params.about.parameter]]
-      language = "HTML"
+      language = "Java"
       level = "70"
     [[params.about.parameter]]
-      language = "Go"
+      language = "Selenium WebDriver (UI Automation)"
+      level = "80"
+    [[params.about.parameter]]
+      language = "REST-Assured (Backend Automation)"
       level = "60"
 
 
@@ -111,6 +111,19 @@ canonifyURLs = true
     # mobile header mode ("fixed", "normal", "auto")
     mobileMode = "auto"
     # FeelIt NEW | 0.2.0
+
+   #Footer config
+  [params.footer]
+    enable = true
+    # FeelIt NEW | 0.2.0
+# Custom content (HTML format is supported)
+    custom = ''
+    # FeelIt NEW | 0.2.0
+ #whether to show Hugo and theme info
+    hugo = false
+    # FeelIt NEW | 0.2.0
+ #whether to show copyright info
+    copyright = false
 
  #Header title config
     [params.header.title]
@@ -191,6 +204,15 @@ canonifyURLs = true
     url = "/categories/"
     title = ""
     weight = 3
+
+  [[menu.main]]
+    identifier = "about"
+    pre = ""
+    post = ""
+    name = "About"
+    url = "/about/"
+    title = ""
+    weight = 4
 
   [params.page.toc]
       # whether to enable the table of the contents
